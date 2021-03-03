@@ -1,6 +1,7 @@
 # EDUQUBE
-PocketQube educative kit <br/>
-Arduino IDE boards URL: `` https://raw.githubusercontent.com/innovaspace/eduqube/main/boards/package_innovaspace_index.json ``
+PocketQube educative kit
+Arduino IDE boards URL: <br>
+`` https://raw.githubusercontent.com/innovaspace/eduqube/main/boards/package_innovaspace_index.json ``
 
 ##### More info at
 -  [Our website](https://www.innova-space.com/)
