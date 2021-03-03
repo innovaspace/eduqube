@@ -10,14 +10,12 @@ Arduino IDE boards URL: https://raw.githubusercontent.com/innovaspace/eduqube/ma
 ## Installing
 
 #### Arduino IDE
-
 Detailed instructions for installation in popular operating systems can be found at:
 -  [Linux](https://www.arduino.cc/en/Guide/Linux) (see also the [Arduino playground](https://playground.arduino.cc/Learning/Linux))
 -  [macOS](https://www.arduino.cc/en/Guide/MacOSX)
 -  [Windows](https://www.arduino.cc/en/Guide/Windows)
 
 #### Board Manager
-
  1. [Download and install the Arduino IDE](https://www.arduino.cc/en/Main/Software) (at least version v1.6.8)
  2. Start the Arduino IDE
  3. Go into Preferences
