@@ -1,7 +1,5 @@
 # EDUQUBE
 PocketQube educative kit <br>
-Arduino IDE board manager URL: <br>
-`` https://raw.githubusercontent.com/innovaspace/eduqube/main/boards/package_innovaspace_index.json ``
 
 ##### More info at
 -  [Our website](https://www.innova-space.com/)
