@@ -15,8 +15,8 @@
           "category": "Contributed",
           "url": "https://github.com/innovaspace/eduqube/raw/main/boards/InnovaSpace-0.1.zip",
           "archiveFileName": "InnovaSpace-0.1.zip",
-          "checksum": "SHA-256:B2C29A201B7FC3A534604CE3EE64F670C3B2CD9F314EDD7CB997E2BB56A037B0",
-          "size": "1627869",
+          "checksum": "988C1A98A63A0F3D80CD0365CF9EDA2384AFA930A870203AF13E0306F4D0D4C9",
+          "size": "1627863",
           "boards": [
             {
               "name": "EduQube OBC v1.0"
