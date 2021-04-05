@@ -1,35 +1,36 @@
 //-----------------------------------------------------------------------------
-//	config.h
-//	Ground Station
-//	General configuration file
+//  config.h
+//  Ground Station
+//  General configuration file
 //-----------------------------------------------------------------------------
 
 #ifndef CONFIG_H
 #define CONFIG_H
 
 //-----------------------------------------------------------------------------
-// LoRa
+//  LoRa
 //-----------------------------------------------------------------------------
-#define TX_POWER 20         // Transmission power in dBm (Possible values = 2-20)
-#define SF 12               // Spreading Factor (Possible values = 6-12)
+#define TX_POWER 20         // Transmission power in dBm (range = 2-20)
+#define SF 12               // Spreading Factor (range = 6-12)
 #define RFM95_CS 18         // Pin connected to radio Chip Select
 #define RFM95_INT 26        // Pin connected to radio interrupt pin
 #define FREQ 915.0          // RFM95 transmission frequency
 
 //-----------------------------------------------------------------------------
-// WiFi
+//  WiFi
 //-----------------------------------------------------------------------------
-#define WiFi_SSID ""        // Insert WiFi SSID
-#define PASSWORD ""         // Insert WiFi password
+#define WiFi_SSID ""        // Insert here your WiFi SSID
+#define PASSWORD ""         // Insert here your WiFi password
 
 //-----------------------------------------------------------------------------
-// EMQX MQTT
+//  EMQX MQTT
 //-----------------------------------------------------------------------------
-#define mqtt_server ""      // Insert MQTT Broker server IP
+#define mqtt_server ""      // Insert here your MQTT Broker server IP
 
 //-----------------------------------------------------------------------------
-// Launch date
+//  Launch date
+//  set launch date for dashboard countdown
 //-----------------------------------------------------------------------------
-#define launch_date "Sep 30, 2022 00:00:00" // set launch date for dashboard countdown
+#define launch_date "Sep 30, 2022 00:00:00" 
 
 #endif
