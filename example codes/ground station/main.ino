@@ -1,6 +1,11 @@
-/*
-  Main program, the sequence of configuration functions is ordered in setup() and the sequence of functions to be excecuted in loop in loop()
-*/
+//-----------------------------------------------------------------------------
+//  main.ino
+//  Ground Station
+//  
+//  Main program
+//  sequence of configuration functions is ordered in setup()
+//  sequence of functions to be excecuted in loop in loop()
+//-----------------------------------------------------------------------------
 
 #include <Arduino.h>
 #include "radio.h"
@@ -10,20 +15,25 @@
 #include "upload.h"
 #include "display.h"
 
+//-----------------------------------------------------------------------------
+//  Setup
+//-----------------------------------------------------------------------------
 void setup()
 {
-  Serial.begin(9600);
-  oled_setup();
-  radio_setup();
-  //wifi_setup();
-  //mqttConnect();
-  //upload_data();
-  print_status();
+    Serial.begin(9600);
+    oled_setup();
+    radio_setup();
+    //wifi_setup();
+    //mqttConnect();
+    //upload_data();
+    print_status();
 }
-
+//-----------------------------------------------------------------------------
+//  Loop
+//-----------------------------------------------------------------------------
 void loop()
 {
-  radio_loop();
-  //upload_data();
-  //mqtt_loop();
+    radio_loop();
+    //upload_data();
+    //mqtt_loop();
 }

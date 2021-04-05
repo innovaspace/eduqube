@@ -1,3 +1,8 @@
+//-----------------------------------------------------------------------------
+//  upload.cpp
+//  Ground Station
+//-----------------------------------------------------------------------------
+
 #include <Arduino.h>
 #include "upload.h"
 #include "mqtt.h"
@@ -5,8 +10,11 @@
 #include "radio.h"
 #include "config.h"
 
-extern struct dataStruct myData; //The sctuctured variable is declared as external
+extern struct dataStruct myData; // The sctuctured variable is declared as external
 
+//-----------------------------------------------------------------------------
+//  VARIABLES
+//-----------------------------------------------------------------------------
 long lastMsg = 0;
 float diff = 1.0;
 float diff2 = 0.1;
@@ -27,21 +35,27 @@ float magZ = 0.0;
 float lat = 0.0;
 float lon = 0.0;
 float rssi = 0.0;
-
-//A function thath checks if the input value changed above the trigger level
-bool checkBound(float newValue, float prevValue, float maxDiff) {
+//-----------------------------------------------------------------------------
+//  Checkbound
+//  Checks if the input value changed above the trigger level
+//-----------------------------------------------------------------------------
+bool checkBound(float newValue, float prevValue, float maxDiff)
+{
     return newValue < prevValue - maxDiff || newValue > prevValue + maxDiff;
 }
-
-//A function that uploads the data to the mqtt server every 5 seconds if changed its value
-void upload_data() {
+//-----------------------------------------------------------------------------
+//  Upload Data
+//  uploads the data to the mqtt server every 5 seconds if changed its value
+//-----------------------------------------------------------------------------
+void upload_data()
+{
   long now = millis();
   if (now - lastMsg > 5000) {
       // Wait a few seconds between measurements
       lastMsg = now;
-      if (checkBound(myData.h, hum, diff)) {                        //If the humidity value changed its value by 1 or more 
-          hum = myData.h;                                           //The new value is stored in "hum"
-          client.publish(humidity_topic, String(hum).c_str(),true); //The new value is published as a string in the topic "humidity_topic" with the flag "true", so it is retained on the server 
+      if (checkBound(myData.h, hum, diff)) {                        // If the humidity value changed its value by 1 or more 
+          hum = myData.h;                                           // The new value is stored in "hum"
+          client.publish(humidity_topic, String(hum).c_str(),true); // The new value is published as a string in the topic "humidity_topic" with the flag "true", so it is retained on the server 
       }
 
       if (checkBound(myData.p, pres, diff)) {

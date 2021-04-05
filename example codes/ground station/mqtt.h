@@ -1,9 +1,14 @@
+//-----------------------------------------------------------------------------
+//  mqtt.h
+//  Ground Station
+//-----------------------------------------------------------------------------
+
 #ifndef MQTT_H
 #define MQTT_H
 
 #include <PubSubClient.h>
 
-//The name of the topics to be used to send each data are defined
+// Define name of the topics to be used to send each data
 
 #define humidity_topic "humidity"
 #define pressure_topic "pressure"
