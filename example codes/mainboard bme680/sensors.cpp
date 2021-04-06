@@ -47,7 +47,8 @@ void sensors_setup()
     {
         Serial.println("MPU9250 initialization unsuccessful");
     }
-  
+    
+    //INA226
     ina.begin();
     ina.configure(INA226_AVERAGES_1, INA226_BUS_CONV_TIME_1100US, INA226_SHUNT_CONV_TIME_1100US, INA226_MODE_SHUNT_BUS_CONT);
     ina.calibrate(rshunt, maxcurrent);
