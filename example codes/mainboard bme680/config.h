@@ -8,9 +8,9 @@
 #define CONFIG_H
 
 //-----------------------------------------------------------------------------
-//	LoRa
+//  LoRa
 //-----------------------------------------------------------------------------
-#define TX_POWER 20     	// Transmission power in dBm (range = 2-20)
+#define TX_POWER 20         // Transmission power in dBm (range = 2-20)
 #define SF 12               // Spreading Factor (range = 6-12)
 #define RFM95_CS 16         // Pin connected to radio Chip Select
 #define RFM95_INT 9         // Pin connected to radio interrupt pin
@@ -19,7 +19,7 @@
 //-----------------------------------------------------------------------------
 //  BME680 & MPU9250
 //-----------------------------------------------------------------------------
-#define SEALEVELPRESSURE_HPA (1026)		// BME680 Sea level pressure (calibration)
+#define SEALEVELPRESSURE_HPA (1026)     // BME680 Sea level pressure (calibration)
 #define MPU_I2C 0x68                    // MPU9250 I2C address
 
 //-----------------------------------------------------------------------------
