@@ -32,7 +32,8 @@ void startup()
     {
         analogWrite(initled, brightness);
         brightness = brightness - fadeAmount;
-        if (brightness <= 0) {
+        if (brightness <= 0) 
+        {
             fadeAmount = -fadeAmount;
         }
         delay(30);
