@@ -19,8 +19,8 @@ byte tx_buf[sizeof(dataStruct)] = {0};
 byte zize;                                    
 
 int initled = LED_BUILTIN_GREEN;
-int brightness = 255;                         // LED's bright
-int fadeAmount = 5;                           // LED fading points
+int brightness = 255;                         //LED brightness
+int fadeAmount = 5;                           //LED fading points
 
 //-----------------------------------------------------------------------------
 //  Startup
