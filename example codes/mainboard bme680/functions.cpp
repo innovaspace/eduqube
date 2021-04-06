@@ -82,13 +82,13 @@ void print_data()
     if (bmestatus)
     {
         Serial.println("BME Readings:");
-        Serial.print("Temperatura: ");
+        Serial.print("Temperature: ");
         Serial.println(myData.t);
-        Serial.print("Humedad: ");
+        Serial.print("Humidity: ");
         Serial.println(myData.h);
-        Serial.print("Presión: ");
+        Serial.print("Pressure: ");
         Serial.println(myData.p);
-        Serial.print("Altitud: ");
+        Serial.print("Altitude: ");
         Serial.println(myData.a);
         Serial.print("Gas: ");
         Serial.println(myData.g);
@@ -102,19 +102,19 @@ void print_data()
     if (mpustatus >= 0)
     {
         Serial.println("MPU9250 Readings:");
-        Serial.print("Acelerometro (X Y Z): ");
+        Serial.print("Acelerometer (X Y Z): ");
         Serial.print(myData.ax);
         Serial.print(" ");
         Serial.print(myData.ay);
         Serial.print(" ");
         Serial.println(myData.az);
-        Serial.print("Giroscopo (X Y Z): ");
+        Serial.print("Gyroscope (X Y Z): ");
         Serial.print(myData.gx);
         Serial.print(" ");
         Serial.print(myData.gy);
         Serial.print(" ");
         Serial.println(myData.gz);
-        Serial.print("Magnetometro (X Y Z): ");
+        Serial.print("Magnetometer (X Y Z): ");
         Serial.print(myData.mgx);
         Serial.print(" ");
         Serial.print(myData.mgy);
@@ -129,10 +129,10 @@ void print_data()
     //GPS
     if (gpsstatus)
     {
-        Serial.println("Posicion");
-        Serial.print("Latitud: ");
+        Serial.println("Position");
+        Serial.print("Latitude: ");
         Serial.println(myData.g_lat);
-        Serial.print("Longitud: ");
+        Serial.print("Longitude: ");
         Serial.println(myData.g_lng);
     }
     else
