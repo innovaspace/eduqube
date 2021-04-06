@@ -1,7 +1,9 @@
-/*
-The ground station is connected to a WiFi network with the SSID and password defined in "config.h"
-It shows the connection status on the OLED screen
-*/
+//-----------------------------------------------------------------------------
+//  wifi_c.cpp
+//  Ground Station
+//  The ground station is connected to a WiFi network with the SSID and password defined in "config.h"
+//  It shows the connection status on the OLED screen
+//-----------------------------------------------------------------------------
 
 #include "wifi_c.h"
 #include "config.h"
@@ -9,6 +11,9 @@ It shows the connection status on the OLED screen
 
 WiFiClient wifiClient;
 
+//-----------------------------------------------------------------------------
+//  Wifi Setup
+//-----------------------------------------------------------------------------
 void wifi_setup()
 {
     WiFi.disconnect();
@@ -17,7 +22,9 @@ void wifi_setup()
     WiFi.setAutoConnect(true);
     WiFi.begin(WiFi_SSID,PASSWORD);
     delay(100);
+    
     byte count = 0;
+
     while(WiFi.status() != WL_CONNECTED && count < 10)
     { 
         count ++;
@@ -28,6 +35,7 @@ void wifi_setup()
         myOLED.print( "Connecting to WiFi", LEFT, 16);
         myOLED.update();
     }
+
     if(WiFi.status() == WL_CONNECTED)
     {
         Serial.println ("Connecting...OK");
