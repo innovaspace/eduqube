@@ -11,7 +11,7 @@ Section TBD
 
 ## Installing
 
-##OBC
+### OBC
 #### Arduino IDE
 Detailed instructions for installation in popular operating systems can be found at:
 -  [Linux](https://www.arduino.cc/en/Guide/Linux) (see also the [Arduino playground](https://playground.arduino.cc/Learning/Linux))
@@ -27,5 +27,5 @@ Detailed instructions for installation in popular operating systems can be found
  6. Search "Innova Space" and install the boards
  7. Select "Eduqube" from the Tools -> Board menu
 
-##Ground Station (Heltec LoRa 32 v2)
+### Ground Station (Heltec LoRa 32 v2)
 [Heltec Installation tutorial](https://heltec-automation-docs.readthedocs.io/en/latest/esp32/quick_start.html) 
