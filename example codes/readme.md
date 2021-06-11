@@ -15,7 +15,7 @@ To upload the data to the MQTT server:
 To run each code, you need to have the following libraries installed:
 
 #### Mainboard
-- RadioHead (RH_RF95)
+- [RadioHead (RH_RF95)](http://www.airspayce.com/mikem/arduino/RadioHead/RadioHead-1.117.zip)
 - TinyGPS++
 - Adafruit Sensor
 - Adafruit BME280 (or Adafruit BME680)
@@ -24,6 +24,6 @@ To run each code, you need to have the following libraries installed:
 
 #### Ground Station
 - RadioHead (RH_RF95)
-- OLED_I2C
+- [OLED_I2C](http://www.rinkydinkelectronics.com/download.php?f=OLED_I2C.zip)
 - PubSubClient
 - WiFi
