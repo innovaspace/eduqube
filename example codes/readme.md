@@ -24,6 +24,6 @@ To run each code, you need to have the following libraries installed:
 
 #### Ground Station
 - RadioHead (RH_RF95)
-- [OLED_I2C](http://www.rinkydinkelectronics.com/download.php?f=OLED_I2C.zip)
+- [OLED_I2C](http://www.rinkydinkelectronics.com/library.php?id=79)
 - PubSubClient
 - WiFi
